@@ -1,0 +1,222 @@
+/* REDEFINIR */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+
+/* cabeçalho */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    /* box-shadow: 1px 1px 10px 8px #cc446a ;  */
+}
+
+header img {}
+
+
+/* Corpo */
+
+body {
+    background-image: url(./assets/imagens/esmaecido\ color.png);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+}
+
+/* conteúdo principal */
+
+main {
+    display: flexbox;
+    align-content: center;
+}
+
+#container {
+    text-align: center;
+}
+
+#container .nome h1 {
+    font-size: 50px;
+    color: #d585a7;
+    padding: 5px 0px 5px 0px;
+}
+
+#container .nome h5 {
+    font-size: 20px;
+    color: #77d1d2;
+}
+
+.arrow p {
+    padding: 20px 20px 0px 10px;
+    font-weight: bolder;
+    color: #d585a7;
+    font-size: 17px;
+
+}
+
+.arrow {
+    font-size: 30px;
+    cursor: pointer;
+    /* animation: blink 1s steps(5, start) infinite; */
+    color: #d585a7;
+    padding: 0px;
+
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animação {
+    transition: 300ms;
+
+}
+
+.rotacaoseta {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+
+.active {
+    display: block !important;
+}
+
+
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.email {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.email input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+.email button {
+    width: 15%;
+    padding: 5px 10px;
+    color: #77d1d2;
+    background: linear-gradient(to right, #77d1d2 50%, #d585a7 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+    margin-top: 20px;
+}
+
+.email button:hover {
+    background-position: left bottom;
+    color: #d585a7;
+}
+
+
+.lista ul {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 25px;
+    padding: 3px;
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+.lista ul li {
+    padding: 5px;
+}
+
+.lista ul li img {
+    max-width: 50px;
+
+}
+
+a {
+    text-decoration: none;
+    transition: 300ms;
+}
+
+a:hover {
+    color: #d585a7;
+}
+
+/* RESPONSIVIDADE */
+
+@media only screen and (max-width: 912px) {
+    .email {
+        width: 100%;
+
+    }
+
+    body {
+        background-position: center center;
+    }
+
+}
+
+@media only screen and (max-width: 923px) {
+    .email button {
+        padding: 5px 0px;
+
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    .email button {
+        padding: 5px 0px;
+
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #container .nome h1 {
+        font-size: 30px;
+    }
+
+    #container .nome h5 {
+        font-size: 15px;
+    }
+
+    .about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+
+    .arrow p {
+        font-size: 14px;
+    }
+
+    header img {
+        max-width: 170px;
+    }
+}

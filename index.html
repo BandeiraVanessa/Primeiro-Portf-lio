@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Configurações -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Vanessa Bandeira</title>
+    <meta name="author" content="Vanessa Bandeira">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&family=Montserrat:ital,wght@0,200;0,300;0,500;0,800;1,300&display=swap');
+    </style>
+    <link rel="stylesheet" href="./style.css">
+    <!-- link caminho fontAwesone -->
+    <script src="https://kit.fontawesome.com/d9ee258de8.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<!-- Corpo -->
+
+<body>
+
+
+
+    <!-- Cabeçalho -->
+    <header>
+        <img src="./assets/imagens/logo2.png" alt="FOTO LOGO">
+
+
+    </header>
+
+
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section id="container">
+            <div class="nome">
+                <h1>Vanessa Bandeira</h1>
+                <h5>Front-end Developer</h5>
+            </div>
+
+
+
+            <div onclick="displayAbout()" class="arrow">
+                <p>Sobre mim:</p>
+                <i id="animação" class="fa-solid fa-sort-down"></i>
+            </div>
+
+
+
+            <div style="display: none;" onclick="displayAbout()" id="about" class="about">
+                <p>32 anos, natural do Rio de Janeiro e graduando Direito. </p>
+                <p>Em meados de 2022, decidida montar um modelo de negócio online, desenvolvi as configurações de um
+                    site com tema pronto e gostei do processo, entretanto, fiquei bastante curiosa quando visualizei
+                    os
+                    códigos HTML e CSS.
+                <p>Foi nesse exato momento em que o bichinho da Tech me mordeu.
+                    Decidida fui estudar Full Stack na Gama Academy.
+                </p>
+                <p>Estou me divertindo com o que amo. :)
+                </p>
+            </div>
+
+            <div class="email">
+
+                <form action="">
+                    <input type="text" placeholder="Deixe o seu e-mail :)">
+                    <button>Enviar</button>
+                </form>
+            </div>
+
+            <section class="lista">
+                <div>
+                    <ul>
+                        <li><a target="_blank" href="https://github.com/BandeiraVanessa"><img
+                                    src="./assets/imagens/github.png" alt="logo github"></a>
+                        </li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/vanessa-bandeira-9a5016259/"><img
+                                    src="./assets/imagens/linkedln.png" alt="logo linkedln"></a>
+                        </li>
+                        <li><a target="_blank" href="mailtobandeirapvanessa@gmail.com"><img
+                                    src="./assets/imagens/gmail.png" alt="logo gmail"></a>
+                        </li>
+                        <li><a target="_blank" href="https://wa.me/21990857562"> <img
+                                    src="./assets/imagens/whatsapp.png" alt="logo whathsapp"></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animação');
+            arrow.classList.toggle('rotacaoseta');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
