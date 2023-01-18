@@ -17,8 +17,7 @@ header {
     flex-direction: column;
     padding: 10px;
     /* box-shadow: 1px 1px 10px 8px #cc446a ;  */
-    max-width: 100vh;
-    max-height: 100vh;
+    
 }
 
 header img {}
@@ -30,7 +29,7 @@ body {
     background-image: url(./assets/imagens/esmaecido\ color.png);
     background-repeat: no-repeat;
     background-position: center center fixed;
-    background-size: contain 100% 100% 100% 100%;
+    background-size: cover;
 }
 
 /* conteúdo principal */
